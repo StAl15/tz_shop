@@ -1,0 +1,12 @@
+.content {
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+    justify-items: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    text-align: center;
+    border-color: gray
+}

@@ -1,0 +1,10 @@
+.content {
+    background-color: #F4684C;
+    color: white;
+    border-style: none;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-top: auto;
+}

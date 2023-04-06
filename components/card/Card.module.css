@@ -1,0 +1,9 @@
+.content {
+    width: auto;
+    display: inline-grid;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: none
+}
