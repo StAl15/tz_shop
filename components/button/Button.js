@@ -1,32 +1,22 @@
 import styles from './Button.module.css'
+import variants from './ButtonVariants.module.css'
 import React, {useEffect, useState} from "react";
+import classNames from "classnames";
 
 export const Button = ({color, onClickEvent, children, cls, ...other}) => {
-    const [bgColor, setBgColor] = useState('');
 
-    useEffect(() => {
-        return () => {
-            switch (color) {
-                case 'primary':
-                    setBgColor('#F4684C')
-                    break;
-                case 'success':
-                    setBgColor('green')
-                    break;
-                case 'danger':
-                    setBgColor('yellow')
-                    break;
-            }
-        };
-    }, [bgColor]);
-
+    const classes = classNames(
+        variants[color],
+        styles.content,
+        cls
+    )
+    console.log(classes)
 
     return (
         <>
             <button
                 {...other}
-                style={{backgroundColor: bgColor}}
-                className={cls ? cls : styles.content}
+                className={classes}
                 onClick={onClickEvent}>
                 {children}
             </button>

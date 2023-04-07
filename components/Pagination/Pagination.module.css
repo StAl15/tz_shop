@@ -6,12 +6,10 @@
 }
 
 .btn {
+    /*background-color: #EAEFF3;*/
     color: black;
-    border-style: none;
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     align-content: center;
-    width: auto;
 }

@@ -17,7 +17,7 @@ export const Pagination = ({page, setPage}) => {
     return (
         <>
             <div className={styles.content}>
-                <Button cls={styles.btn} onClickEvent={() => switchBack()}>
+                <Button cls={styles.btn} color={'white'} onClickEvent={() => switchBack()}>
                     <Image alt={'cl'} src={cl}/>
                 </Button>
                 <Input
@@ -25,7 +25,7 @@ export const Pagination = ({page, setPage}) => {
                     disabled={true}
                     contentEditable={false}
                 />
-                <Button cls={styles.btn} onClickEvent={() => switchFront()}>
+                <Button cls={styles.btn} color={'white'} onClickEvent={() => switchFront()}>
                     <Image alt={'cr'} src={cr}/>
                 </Button>
             </div>
